@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/edit/{{city.id}}" method="post">
+     <div class="row">
+        <div class="col">
+            <label for="fldheight">Height(Inches)</label>
+            <input id="fldheight" type="text" class="form-control" placeholder="Height(Inches)" name="fldheight" value="{{city.fldheight}}">
+        </div>
+        <div class="col">
+            <label for="fldweight">Weight(Pounds)</label>
+            <input id="fldweight" type="text" class="form-control" placeholder="Weight(Pounds)" name="fldweight" value="{{city.fldweight}}">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+
+</form>
+{% endblock %}
